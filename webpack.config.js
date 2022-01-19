@@ -2,28 +2,28 @@ const path = require("path")
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: "./src/index.js"
   },
 
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist")
   },
 
   module: {
     rules: [
       {
         test: /\.js$/,
-        use: ['babel-loader']
+        use: ["babel-loader"]
       }
     ]
   },
 
   watch: true,
-
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    watchContentBase: true,
-    liveReload: true
+    static: {
+      directory: path.join(__dirname, "dist"),
+      watch: true
+    }
   }
 }
