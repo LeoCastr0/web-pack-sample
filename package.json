@@ -1,7 +1,6 @@
 {
   "name": "desvendando_webpack",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +16,14 @@
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "babel-loader": "^8.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/escoladejavascript.com/webpack-start.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/escoladejavascript.com/webpack-start/issues"
+  },
+  "homepage": "https://gitlab.com/escoladejavascript.com/webpack-start#readme",
+  "description": ""
 }
